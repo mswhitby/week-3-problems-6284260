@@ -1,5 +1,5 @@
 def user_input(): 
-  txt = input(
+  input(
     """
     1.vowel check must use only one word at a time
     2.word must not contain any special characters
@@ -10,28 +10,28 @@ def user_input():
     "Please input a word: "
  ) 
   
-  return txt
+  return user_input
 
-def count_vowels(txt):
-  int(count_vowels)
-count_vowels=0
-  for char in txt: 
-  if "a" in txt():
-  	count_vowels=count_vowels + 1
-  if "e" in txt():
-  	count_vowels=count_vowels + 1
-  if "i" in txt():
-  	count_vowels=count_vowels + 1
-  if "o" in txt():
-  	count_vowels=count_vowels + 1
-  if "u" in txt():
-  	count_vowels=count_vowels + 1
+def txt(user_input):
+    for chr in user_input: 
+		if "a" in user_input():
+		    txt=txt+1
+		if "e" in user_input():
+		    txt=txt+1
+    if "i" in user_input():
+		    txt=txt+1
+    if "o" in user_input():
+	    	txt=txt+1
+    if "u" in user_input():
+		    txt=txt+1
 		 
-	return count_vowels
-	
- str(count_vowels)
-print("this word has " + count_vowels + " vowels")
+    return txt
+    
+    str(txt)
+    print("this word has "+txt+" vowels")
+    return txt
 
-  
 
-txt=user_input()
+
+
+user_input()
