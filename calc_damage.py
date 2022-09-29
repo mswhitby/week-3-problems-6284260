@@ -1,62 +1,69 @@
-def user_input():
-  input(
+def user_inpu():
+  damage=input(
     """
     1.input damage value
     2.damage cannot be negative
     3.damage must be a number
+    4.damage cannot be in word form
     
     """
     
     "Please input damage: " 
-    
   )
   
-  return 
+  return damage
+  int(damage)
   
-
 def user_inpt():
-  input(
+  speed=input(
     """
     1.input speed value
     2.speed cannot be negative
     3.speed must be a number
+    4.speed cannot be in word form
     
     """
     
     "Please input speed: " 
-    
   )
   
-  return 
+  return speed
+  int(speed)
   
 def user_ipt():
-  input(
+  time=input(
     """
     1.input time value
     2.time cannot be negative
     3.time must be a number
+    4.time interval is in seconds
     
     """
     
     "Please input time: " 
-    
   )
   
-  return 
+  return time
+  int(time)
   
-def damage_total():
-  DPS=damage*speed*time
-  for character in DPS:
-   if DPS < 0:
+def damage_total(damage,speed,time):
+  damage, speed, time = int(damage), int(speed), int(time)
+  # print(damage, type(damage))
+  # print(speed, type(speed))
+  # print(time, type(time))
+  dps = damage * speed * time
+  dps=str(dps)
+  # print(dps, type(dps))
+  if  "-" in dps:
     print("invalid")
-    break
-
-  return
-  print(str(DPS))
+  print(dps)
+  
+  return dps
   
   
   
   
-damage = user_input()
-time =  user_ipt()
+damage = user_inpu()
 speed = user_inpt()
+time =  user_ipt()
+rule_1 = damage_total(damage,speed,time)
